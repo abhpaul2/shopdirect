@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8"/>    
+    <title>Test my APP</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bootstrap.css" />
+    <script type="text/javascript" src= "/angular.min.js" ></script>
+	<script type="text/javascript" src= "/app/module.js" ></script>
+	<script type="text/javascript" src= "/app/controller.js"></script>
+   
+</head>
+<body ng-controller= "PersonController as vm">
+    Hello ! {{10 + 20}}
+    <div>
+    <table>
+    	<thead>
+    		<tr>
+    		 	<th>
+    		 		Name
+    		 	</th>
+    		 	<th>
+    		 		Mail ID
+    		 	</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr ng-repeat="person in vm.persons">
+    			<td>{{person.name}}</td>
+    			<td>{{person.emailId}}</td>
+    		</tr>
+    	</tbody>    
+    </table>
+    </div>
+</body>
+</html>
