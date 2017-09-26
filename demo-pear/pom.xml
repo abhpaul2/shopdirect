@@ -41,7 +41,7 @@
 	     <artifactId>uima-simple-server</artifactId>
 	     <scope>system</scope>
 	     <version>1.0</version>
-	     <systemPath>${basedir}\src\main\webapp\WEB-INF\lib\uima-simple-server.jar</systemPath>
+	     <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/uima-simple-server.jar</systemPath>
 	   </dependency>
  
 
