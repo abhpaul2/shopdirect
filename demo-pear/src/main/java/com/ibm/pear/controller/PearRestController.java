@@ -47,9 +47,9 @@ public class PearRestController {
 	    	    
 	    System.out.println("Servlet " + this.getClass().getCanonicalName()
 	            + " -- initialisation begins:"+ context.getRealPath(""));
-	    this.baseWebappDirectory = new File(context.getRealPath(""));
+	    //this.baseWebappDirectory = new File(context.getRealPath(""));
 	    //this.baseWebappDirectory = new File("C:/workspace-sts-3.7.2.RELEASE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/SimpleServerTest");
-	    //this.baseWebappDirectory = new File("/home/vcap/app/wlp/usr/servers/defaultServer/apps/myapp.war");
+	    this.baseWebappDirectory = new File("/home/vcap/app/wlp/usr/servers/defaultServer/apps/myapp.war");
 	    
 	    this.server = new Service();
 	    boolean initSuccess = initServer();
