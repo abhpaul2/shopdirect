@@ -23,7 +23,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.7</java.version>
 	</properties>
-
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -33,6 +34,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
+		
+	   <dependency>
+	     <groupId>uima-simple-server</groupId>
+	     <artifactId>uima-simple-server</artifactId>
+	     <scope>system</scope>
+	     <version>1.0</version>
+	     <systemPath>${basedir}\src\main\webapp\WEB-INF\lib\uima-simple-server.jar</systemPath>
+	   </dependency>
+ 
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
