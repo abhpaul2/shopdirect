@@ -1,4 +1,4 @@
-package com.ibm.pear.controller;
+package com.ibm.pear;
 
 import java.io.File;
 import java.util.Date;
@@ -18,6 +18,7 @@ import org.json.XML;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -91,8 +92,9 @@ public class PearRestController {
 		return "index";
 		
 	}*/
-	@ApiOperation(value = "Get the anotated test in xml/json/inline depending on mode")
-	@RequestMapping("/rest")
+	//@RequestMapping("/rest") /api/javainuse
+	//@ApiOperation(value = "Get the anotated test in xml/json/inline depending on mode")	
+	@RequestMapping(method = RequestMethod.POST, value = "/rest")
 	public String Process(Map<String, Object> model,@RequestParam String text, @RequestParam String lang, @RequestParam String mode) {
 		System.out.println("Inside Controller!!!!!!!!!!!!!!!!!!!");
 		
